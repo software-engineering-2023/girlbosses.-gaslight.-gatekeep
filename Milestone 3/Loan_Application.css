@@ -3,3 +3,35 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #223;
 }
+
+form{
+    border: 1px solid #223 ;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10pc;
+}
+
+.loan_type, .collection_type{
+    margin: 0pc 5pc -5pc;
+}
+
+
+/*form div{
+    width: 25%;
+    display: block;
+    marg}*/
+
+.ammount, .maturity_date{
+    margin: 2.5pc 30pc 3pc;
+}
+
+.button{
+    margin-left: 300px;
+
+}
+
+
+/*div{
+    height: 70px;
+    width: 250px;
+}*/
