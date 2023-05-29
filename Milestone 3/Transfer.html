@@ -43,19 +43,21 @@
       <form action="#">
         <div class="user-details">
             <div class="input-box">
+                <span class="details"><br>Transfer Type</span>
+                        <select id="collection type" class="data">
+                            <option value="Internal">Internal</option>
+                            <option value="Domestic">Domestic</option>
+                            <option value="International">International</option>
+                        </select>
             </div>
             <div class="input-box">
                 <span class="details">Account Number <br>*For Internal Bank Transfer*</span>
                 <input type="number" placeholder="Enter recipient account number">
               </div>
-                <div class="input-box">
-                    <span class="details"><br>Transfer Type</span>
-                            <select id="collection type" class="data">
-                                <option value="Internal">Internal</option>
-                                <option value="Domestic">Domestic</option>
-                                <option value="International">International</option>
-                            </select>
-                </div>
+              <div class="input-box">
+                <span class="details">Amount</span>
+                <input type="number" placeholder="Enter amount" required>
+              </div>
             <div class="input-box">
                 <span class="details">IBAN Number<br>*For Domestic* or <br>*International Bank Transfer*</span>
                 <input type="number" placeholder="Enter recipient IBAN number">
@@ -68,8 +70,8 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Transfer">
-        </div>
+            <input type="submit" value="Transfer">
+          </div>
       </form>
     </div>
   </div>

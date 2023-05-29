@@ -83,6 +83,9 @@
   .second{
     color: rgba(0, 0, 0, 0.5);
   }
+  .third{
+    color: rgba(0, 0, 0, 0.5);
+  }
 
   p{
     font-weight: bold;
@@ -111,3 +114,15 @@
    margin-left: 1.5px;
    margin-top: 10px;
   }
+  .box{
+  height: 45px;
+  width: 90%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 2.5px;
+  margin-bottom: 10px;}
