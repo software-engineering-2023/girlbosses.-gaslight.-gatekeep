@@ -63,17 +63,21 @@
     margin-left: 150px;
     margin-right: 60px;
     width: 80%;
-    border-radius: 80px;
+    border-radius: 5px;
     background-color: #F2EFFB;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   }
 
   th{
     width: 10pc;
     text-align: center;
+    
   }
 
   .first{
     text-decoration: underline;
+    border-radius: 5px;
+    background-color: #E4F2FF;
   }
 
   .second{
@@ -90,4 +94,20 @@
 
   body{
     background-image: linear-gradient(#355181, #D5DFF2); 
+  }
+
+  .button{
+   height: 50px;
+   width: 65%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   margin-left: 1.5px;
+   margin-top: 10px;
   }

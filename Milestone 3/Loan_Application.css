@@ -48,13 +48,15 @@ h1{
 }
 
 form{
-    border: 1px solid #223 ;
+    border-style: hidden ;
     border-radius: 5px;
     padding: 10px;
     margin-top: 20px;
     margin-left: 400px;
     margin-right: 400px;
     background-color: #F2EFFB;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+
 }
 
 .loan_type, .collection_type{
@@ -64,6 +66,7 @@ form{
 
 table{
     width: 100%;
+    
 }
 
 th{
@@ -72,9 +75,16 @@ th{
 }
 
 select, input{
-    width: 200px;
-    border-radius: 50px;
-    border-style: hidden;
+    height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+
 }
 
 .button{
@@ -97,7 +107,7 @@ select, input{
 
 
 label{
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: 600;
 }
 
@@ -134,3 +144,47 @@ label{
     float: right;
     text-align: left;
   }
+
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  font-size: 20pt;
+}
+
+  .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .button{
+   height: 50px;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   margin-left: 1.5px;
+   margin-top: 10px;
+  }
+  
