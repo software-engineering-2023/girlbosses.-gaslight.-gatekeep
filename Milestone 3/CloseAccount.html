@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Close Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="IMG/Logo1.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">REPORT AN ISSUE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <div class="container">
+    <div class="title">Close Account</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Account Number</span>
+            <input type="number" placeholder="Enter your Account Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" placeholder="Enter Phone Number" pattern="^01[0-2,5]\d{1,8}$" oninvalid="setCustomValidity('Please only enter numbers of length 11 and starts with 010,011,012 or 015')" oninput="setCustomValidity('')"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Reason for deleting account</span>
+            <input type="text" placeholder="Enter your reason" required>
+          </div>
+        </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Close Account">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

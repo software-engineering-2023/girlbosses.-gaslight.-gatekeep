@@ -7,8 +7,14 @@
         {
             "type": "chrome",
             "request": "launch",
+
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+
             "name": "Open notifications.html",
             "file": "/Users/farah/girlbosses.-gaslight.-gatekeep/notifications.html"
+
         }
     ]
 }
