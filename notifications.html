@@ -46,27 +46,37 @@
         <p>Select the bill that you want to pay</p>
         <table>
             <tr>
-                <td><input type="radio" id="child" name="age" value="child">
-                    <label for="child">Electricity Bill. Due: 6/6/2023 <em>Recieved on 3/6/2023</em></label>
+                <td><input type="radio" id="child" name="amount" value="340">
+                    <label for="child"> <strong>340EGP</strong> - Electricity Bill. Due: 6/6/2023 <em>Recieved on 3/6/2023</em></label>
                 </td>
-                <td><input type="radio" id="adult" name="age" value="adult">
-                    <label for="adult">18 - 64 years</label>
+                <td><input type="radio" id="adult" name="amount" value="60">
+                    <label for="adult"><strong>60EGP</strong> - Telephone Bill. Due: 18/6/2023 <em>Recieved on 1/6/2023</em></label>
                 </td>
                 <td>
-                    <input type="radio" id="senior" name="age" value="senior">
-                    <label for="senior">65 years or older</label>
+                    <input type="radio" id="senior" name="amount" value="103">
+                    <label for="senior"><strong>103EGP</strong> - Water Bill. Due: 04/6/2023 <em>Recieved on 28/5/2023</em></label>
                 </td>
             </tr>
             
         </table>
         <br>
         
-        <div><button type="submit">Submit</button></div>
+        <div>
+          <a href="PayThroughBank.html">
+          <button type="submit" onclick="myPay()">Pay</button>
+          <script>
+            function myPay(){
+              alert("You'll be directed to another page to complete your payment");
+            }
+          </script>
+        </a>
+        </div>
       </form>
       </div>  
     </div>
   </div>
 </section>
+
     <section id="testimonials">
         <div class="container">
           <h1 class="title text-center">WHAT CLIENTS SAY ?</h1>
