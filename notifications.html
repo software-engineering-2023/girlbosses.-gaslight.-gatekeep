@@ -46,7 +46,12 @@
         <p>Select the bill that you want to pay</p>
         <table>
             <tr>
-                <td><input type="radio" id="child" name="amount" value="340">
+                <td><input type="radio" onselect="myPay1()" id="child" name="amount" value="340">
+                  <script>
+                    function myPay1(){
+                      window.location="notifications.html?amount=340.html";
+                    }
+                  </script>
                     <label for="child"> <strong>340EGP</strong> - Electricity Bill. Due: 6/6/2023 <em>Recieved on 3/6/2023</em></label>
                 </td>
                 <td><input type="radio" id="adult" name="amount" value="60">
@@ -71,8 +76,40 @@
           </script>
         </a>
         </div>
-      </form>
       </div>  
+    </div>
+      </form>
+  </div>
+</section>
+<section id="about-us">
+  <div class="container">
+    <h1 class="title text-center">Loan/Credit card Bills DUE!!</h1>
+    <div class="row">
+      <div class="col-md-6 about-us">
+        <!-- <p class="about-title">Why we're different ?</p> -->
+        <form id="form">
+          <table>
+            <tr>
+                <td><input type="radio" id="child" name="amount" value="340">
+                    <label for="child"> <strong>12,000EGP</strong> - for Credit Card Ending with:7489 Due: 01/07/2023 <em>Recieved on 03/06/2023</em></label>
+                </td>
+                <td><input type="radio" id="adult" name="amount" value="60">
+                    <label for="adult"><strong>90,000EGP</strong> - Loan Payment Schedueled For: 15/07/2023 <em>Recieved on 20/05/2023</em></label>
+                </td>
+            </tr>
+            
+        </table>
+        <br>
+        <div>
+          <button type="submit" onclick="mybill()">Pay</button>
+          <script>
+            function mybill(){
+              alert("Payment completed successfully");
+            }
+          </script>
+        </div>
+      </form>
+      </div>
     </div>
   </div>
 </section>
