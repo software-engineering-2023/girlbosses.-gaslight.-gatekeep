@@ -164,6 +164,12 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
+  .submit{
+    width: 100px;
+   height: 40px;
+   color: white;
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
  @media(max-width: 584px){
  .container{
   max-width: 100%;
