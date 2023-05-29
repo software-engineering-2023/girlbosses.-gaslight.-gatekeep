@@ -1,44 +1,85 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Loan Application Client side</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="Loan_Application.css">
 </head>
 <body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/logo1.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">REPORT AN ISSUE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     <h1>Loan Application</h1>
     <form>
-        <div class="loan_type">
-            <label id="loan type">Loan Type</label>
-            <br>
-            <select id="loan type" class="data">
-                <option value = "Personal"> Personal</option>
-                <option value = "Car">Car</option>
-            </select>
-            <br>
-        </div>
-            <div class="ammount">
-            <label id="ammount">Amount</label>
-            <br>
-            <input type="number" class="data">
-            <br>
-        </div>
-        <div class="collection_type">
-            <label id="collection type">Collection Type</label>
-            <br>
-            <select id="collection type" class="data">
-                <option value="monthly">Monthly</option>
-                <option value="yearly">Yearly</option>
-            </select>
-            <br>
-        </div>
-            <div class="maturity_date">
-            <label id="maturity date">Maturity Date</label>
-            <br>
-            <input type="date" class="data">
-            <br>
-        </div>
-        <br>
-        <div class="button">
-            <input type="button" value="Request" id="request">
-        </div>
+        <table>
+            <tr>
+                <th>
+                    <label id="loan type">Loan Type</label>
+                    <br>
+                    <select id="loan type" class="data">
+                        <option value = "Personal"> Personal</option>
+                        <option value = "Car">Car</option>
+                    </select>
+                </th>
+                <th>
+                    <label id="ammount">Amount</label>
+                    <br>
+                    <input type="number" class="data">
+                    <br>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label id="collection type">Collection Type</label>
+                    <br>
+                    <select id="collection type" class="data">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                    <br>
+                </th>
+                <th>
+                    <label id="maturity date">Maturity Date</label>
+                    <br>
+                    <input type="date" class="data">
+                    <br>
+                </th>
+            </tr>
+            <tr>
+                <th><input type="button" value="Request" id="request" class="button"></th>
+            </tr>
+        </table>
+       
     </form>
 </body>
+<footer><br><br><br><br><br><br><br><br><br><br><br><br></footer>
+</html>
