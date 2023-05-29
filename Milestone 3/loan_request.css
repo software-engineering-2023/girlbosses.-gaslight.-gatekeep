@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+th{
+    background-color: antiquewhite;
+    text-align: center;
+    border: 1px solid black;
+}
+
+table{
+    margin: auto 10pc 10pc;
+    width: 80%;
+}

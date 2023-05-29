@@ -30,6 +30,14 @@ form{
 
 }
 
+label{
+    font-size: 20pt;
+}
+
+.data{
+    size: 40;
+}
+
 
 /*div{
     height: 70px;
