@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+  }
+  body{
+    font-family: sans-serif;
+  }
+  #nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .navbar{
+    background: linear-gradient(to right,#e4eaf8,#4e6eb2);
+    padding: 0!important ;
+  }
+  .navbar-brand img{
+    height: 60px;
+    padding-left: 20px;
+  }
+  .navbar-nav li{
+    padding: 0 10px;
+    margin-left: 20px;
+  }
+  .navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+  }
+  .fa-bars{
+    color: #000;
+    font-size: 30px;
+  }
+  .container-fluid .navbar-toggler{
+    padding: 8px 15px;
+    border: 3px solid #e4eaf8;
+  }
+  #banner{
+    background:  #2f426b;
+    color: #fff;
+    padding-top: 5%;
+  }
+  #banner a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .img-fluid{
+    margin-top: 170px;
+  }
+  .play-btn{
+    width: 45px;
+    margin: 20px;
+  }
+  .bottom-img{
+    margin-top: -5%;
+    width: 100%;
+  }
+  #services{
+    padding: 80px 0;
+  }
+  .service-img{
+    width: 100px;
+    margin-top: 20px;
+  }
+  .services{
+    padding: 20px;
+  }
+  .services h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+  .title::before{
+    content: '';
+    background: #2f426b;
+    height: 7px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(-10px);
+  
+  }
+  .title::after{
+    content: '';
+    background: #2f426b;
+    height: 10px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(10px);
+  
+  }
+  #services .btnv{
+    box-shadow: none;
+    padding: 8px 25px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-image:  linear-gradient(to right,#2f426b,#3e588f);
+  }
+    #lists{
+    display: inline-block;
+    }
+   .RemindMeBfr {
+    background-color: #2f426b;
+    color: white;
+    padding: 10px 20px;
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10%;
+    font-size: 12px;
+    border: none;
+    float: left;
+  }
+  .dropbtnNo {
+    padding: 10px 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: #2f426b;
+    color: #fff;
+    transform: scaleX(1500px);
+  }
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #42acb2;}
+
+ .submittt:hover { 
+  padding: 8px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 30%;
+  background: #2f426b;
+ }
+ button { 
+  margin-top: 10px;
+ }
+
+button:hover, input:hover, label:hover { cursor: pointer; }
+
+  .about-us{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .about-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+  }
+  #about-us ul li{
+    margin: 10px 0;
+  }
+  #about-us ul{
+    margin-left: 20px;
+  }
+  #testimonials{
+    margin: 100px 0;
+  }
+  .testimonials{
+    border-left: 4px solid #7b1798;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .testimonials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  .user-details{
+    display: inline-block;
+    font-size: 12px;
+    
+  }
+  #social-media{
+    background-color: #c0c0c0;
+    padding: 100px 0;
+  }
+  #social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .social-icons img{
+    width: 60px;
+    transition: all 0.3s linear;
+  }
+  .social-icons a:hover img{
+    transform: translateY(-10px);
+  }
+  #footer {
+    background: #b8c7e8; 
+    overflow: hidden;
+  }
+  .footer img{
+    width: 100%;
+  }
+  .footer-box{
+    padding: 20px;
+  }
+  .footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+  }  

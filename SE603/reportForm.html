@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="submitStyles.css">
+        <style>
+            select{
+                background-color: cornflowerblue;
+                width:400px;
+                display: block;
+                color: #ffffff;
+                padding: 8px 16px;
+                border: 1px solid transparent;
+                border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+                cursor: pointer;
+                user-select: none;
+            }
+        </style>
+        <title>GGG</title>
+    </head>
+    <form action="reportSubmit.html">
+        <label for="choose">How can i help you:</label><br>
+        <select name="choose" id="choose">
+            <option value="o1">Select one:</option>
+            <option value="o2">CreditCard stolen/lost put my account on hold</option>
+            <option value="o3">Apply for a new CreditCard/CreditCard damaged apply for a new one</option>
+        </select>
+        <br>
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" name="username" placeholder="username.." required>
+        <br><br>
+        <label for="email">Enter Email:</label>
+        <input type="email" id="email" name="email" placeholder="email.." required>
+        <br><br>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password" placeholder="password.." required>
+        <br><br>
+        <label for="number">Enter Phone Number:</label>
+        <input type="number" id="number" name="number" placeholder="phone number.." required>
+        <br><br>
+        <label for="account">Enter Account Number:</label>
+        <input type="number" id="account" name="account" placeholder="account number.." required>
+        <br><br>
+        <button class="button">submit</button>
+    </form>
+    <div class="container">
+        <div class="center">
+            <a href="/Home.html"><button class="button">Back to Home Page</button></a>        
+        </div>
+    </div>
+      
+</html>
