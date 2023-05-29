@@ -1,88 +1,101 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <title>Register</title>
-        <link rel="stylesheet" href="Style.css">
-    </head>
-
-    <section id="navbar">
-        <nav class="navbar navbar-expand-lg ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="IMG/logo1.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">CONTACT</a>
-                </li>
-              </ul>
-            </div>
+<!-- Designined by CodingLab - youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="IMG/Logo1.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">REPORT AN ISSUE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your full name" required>
           </div>
-        </nav>
-      </section>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" placeholder="Enter Phone Number" pattern="^01[0-2,5]\d{1,8}$" oninvalid="setCustomValidity('Please only enter numbers of length 11 and starts with 010,011,012 or 015')" oninput="setCustomValidity('')"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="Account">
+          <input type="radio" name="account" id="dot-1">
+          <input type="radio" name="account" id="dot-2">
+          <span class="Account-title">Do you have a bank account?</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="account">Yes</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="account">No</span>
+          </label>
+          </div>
+        </div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Account Number</span>
+            <input type="number" placeholder="If yes please enter account no.">
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
 
-    <h1>Register</h1>
-    
-    <body>
-        <form>
-            <label for="FirstName">First Name:</label>
-            <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name" required>
-
-            <br><br>
-
-            <label for="LastName">Last Name:</label>
-            <input type="text" id="LastName" name="LastName" placeholder="Enter Last Name" required>
-
-            <br><br>
-
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter Username" required>
-
-            <br><br>
-
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" name="email" placeholder="Enter your E-mail" required>
-
-            <br><br>
-
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" placeholder="Choose your Password" required>
-
-            <br><br>
-
-            <p>Do you have a bank account?</p>
-            <label for="yes">Yes</label>
-            <input type="radio" name="ANS" value="yes" id="yes">
-            <label for="no">No</label>
-            <input type="radio" name="ANS" value="no" id="no">
-
-            <br><br>
-
-            <label for="AccountNumber">Account Number:</label>
-            <input type="number" id="AccountNumber" name="AccountNumber" placeholder="If yes please enter">
-
-            <br><br>
-
-            <label for="PhoneNumber">Phone Number:</label>
-            <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="Enter Phone Number" pattern="^01[0-2,5]\d{1,8}$" required  required>
-
-            <br><br>
-
-            <input type="submit" value="Register">
-        </form>
-
-    </body>
+</body>
 
 </html>
