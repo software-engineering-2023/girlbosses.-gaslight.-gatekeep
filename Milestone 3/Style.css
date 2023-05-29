@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
 *{
   margin: 0;
   padding: 0;
@@ -53,6 +53,7 @@ body{
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-top: 20px;
 }
 .container .title{
   font-size: 25px;
@@ -144,7 +145,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 30px 0
+   margin: 3px 0
  }
  form .button input{
    height: 100%;
