@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Loan Application Client side</title>
+    <link rel="stylesheet" href="Loan_Application.css">
+</head>
+<body>
+    <h1>Loan Application</h1>
+    <form>
+        <div class="loan type">
+            <label id="loan type">Loan Type</label>
+            <select id="loan type">
+                <option value = "Personal"> Personal</option>
+                <option value = "Car">Car</option>
+            </select>
+        </div>
+            <div class="ammount">
+            <label id="ammount">Amount</label>
+            <input type="number">
+        </div>
+        <div class="collection type">
+            <label id="collection type">Collection Type</label>
+            <select id="collection type">
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+        </div>
+            <div class="maturity date">
+            <label id="maturity date">Maturity Date</label>
+            <input type="date">
+        </div>
+        <input type="button" value="Request" id="request">
+    </form>
+    
+</body>
