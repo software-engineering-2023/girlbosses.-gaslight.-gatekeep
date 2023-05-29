@@ -48,15 +48,15 @@
                 <th>
                     <label id="loan type">Loan Type</label>
                     <br>
-                    <select id="loan type" class="data">
+                    <select id="loan type" class="data" required>
                         <option value = "Personal"> Personal</option>
                         <option value = "Car">Car</option>
                     </select>
                 </th>
                 <th>
-                    <label id="ammount">Amount</label>
+                    <label id="ammount" >Amount</label>
                     <br>
-                    <input type="number" class="data">
+                    <input type="number" class="data" placeholder="0.0" required>
                     <br>
                 </th>
             </tr>
@@ -64,7 +64,7 @@
                 <th>
                     <label id="collection type">Collection Type</label>
                     <br>
-                    <select id="collection type" class="data">
+                    <select id="collection type" class="data" required>
                         <option value="monthly">Monthly</option>
                         <option value="yearly">Yearly</option>
                     </select>
@@ -73,13 +73,18 @@
                 <th>
                     <label id="maturity date">Maturity Date</label>
                     <br>
-                    <input type="date" class="data">
+                    <input type="date" class="data" placeholder="Maturity Date" required>
                     <br>
                 </th>
             </tr>
-            
         </table>
-        <input type="button" value="Request" id="request" class="button">
+        <div><button type="submit" value="Request" id="request" class="button" onclick="myFunction()"> Request </button>
+          <script>
+            function myFunction(){
+              alert("Your loan request has been submitted" );
+            }
+          </script>
+          </div>
     </form>
 </body>
 <footer><br><br><br><br><br><br><br><br><br><br><br><br></footer>

@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <th class="second" id="no1">1354651</th>
-            <th class="second" id="name1">Zeina</th>
+            <th class="second" id="name1"><a href="cleintInfo.css">Zeina</a></th>
             <th class="second">Car</th>
             <th class="second">12000</th>
             <th class="second">Yearly</th>
@@ -56,8 +56,20 @@
         </tr>
         <tr><th><br><br><br><br><br><br><br><br></th></tr>
         <tr>
-          <th colspan="3"><input type="button" value="Accept" id="request" class="button"></th>
-          <th colspan="3"><input type="button" value="Reject" id="request" class="button"></th>
+          <th colspan="3"><button type="button" value="Accept" id="request" class="button" onclick="myAccept()"> Accept </button>
+          <script>
+            function myAccept(){
+              alert("Loan Application has been accepted" );
+            }
+          </script>
+          </th>
+          <th colspan="3"><button type="button" value="Reject" id="request" class="button" onclick="myReject()"> Reject </button>
+            <script>
+              function myReject(){
+                alert("Loan Application has been rejected" );
+              }
+            </script>
+          </th>
         </tr>
     
     </table>
